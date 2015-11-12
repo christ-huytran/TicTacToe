@@ -18,6 +18,13 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         winnerLabel.hidden = true
+        for view in self.view.subviews as [UIView] {
+            if let btn = view as? UIButton {
+                if btn.tag != -1 {
+                    btn.backgroundColor = UIColor.grayColor()
+                }
+            }
+        }
     }
 
     override func didReceiveMemoryWarning() {
