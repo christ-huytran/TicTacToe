@@ -9,7 +9,9 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    var TTT = TicTacToeGame()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -21,5 +23,15 @@ class ViewController: UIViewController {
     }
 
 
+    @IBAction func buttonPressed(sender: UIButton) {
+        TTT.updateGameBoardAt(sender.tag, withColor: TTT.currentTurn)
+        if TTT.currentTurn == "Red" {
+            sender.backgroundColor = UIColor.redColor()
+        } else {
+            sender.backgroundColor = UIColor.blueColor()
+        }
+        TTT.checkGame()
+        TTT.updateTurn()
+    }
 }
 

@@ -30,6 +30,14 @@ class TicTacToeGame {
         }
     }
     
+    func updateTurn() {
+        if currentTurn == "Red" {
+            currentTurn = "Blue"
+        } else {
+            currentTurn = "Red"
+        }
+    }
+    
     func resetGame() {
         gameBoard = [0,0,0,
             0,0,0,
