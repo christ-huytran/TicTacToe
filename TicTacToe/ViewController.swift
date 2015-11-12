@@ -34,17 +34,21 @@ class ViewController: UIViewController {
 
 
     @IBAction func buttonPressed(sender: UIButton) {
-        TTT.updateGameBoardAt(sender.tag, withColor: TTT.currentTurn)
-        if TTT.currentTurn == "Red" {
-            sender.backgroundColor = UIColor.redColor()
-        } else {
-            sender.backgroundColor = UIColor.blueColor()
+        if TTT.gameOver == false {
+            TTT.updateGameBoardAt(sender.tag, withColor: TTT.currentTurn)
+            if TTT.currentTurn == "Red" {
+                sender.backgroundColor = UIColor.redColor()
+            } else {
+                sender.backgroundColor = UIColor.blueColor()
+            }
+            TTT.checkGame()
         }
-        TTT.checkGame()
-        if TTT.gameOver == true {
+        
+        if TTT.gameOver == true && winnerLabel.hidden == true {
             winnerLabel.hidden = false
             winnerLabel.text = "Congratulations! \(TTT.currentTurn) wins!"
         }
+        
         TTT.updateTurn()
     }
     
