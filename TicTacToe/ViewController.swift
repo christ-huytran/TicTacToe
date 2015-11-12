@@ -12,9 +12,12 @@ class ViewController: UIViewController {
     
     var TTT = TicTacToeGame()
     
+    @IBOutlet weak var winnerLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        winnerLabel.hidden = true
     }
 
     override func didReceiveMemoryWarning() {
@@ -31,7 +34,16 @@ class ViewController: UIViewController {
             sender.backgroundColor = UIColor.blueColor()
         }
         TTT.checkGame()
+        if TTT.gameOver == true {
+            winnerLabel.hidden = false
+            winnerLabel.text = "Congratulations! \(TTT.currentTurn) wins!"
+        }
         TTT.updateTurn()
+    }
+    
+    @IBAction func resetButtonPressed(sender: UIButton) {
+        TTT.resetGame()
+        viewDidLoad()
     }
 }
 

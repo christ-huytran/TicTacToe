@@ -126,10 +126,20 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gnq-G0-2WF">
                                 <rect key="frame" x="281" y="460" width="39" height="30"/>
                                 <state key="normal" title="Reset"/>
+                                <connections>
+                                    <action selector="resetButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mYy-Z0-mn5"/>
+                                </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8aE-Sg-tAD">
+                                <rect key="frame" x="279" y="415" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="8aE-Sg-tAD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="00r-pp-JXo"/>
                             <constraint firstItem="gAQ-bh-9ei" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0Wf-FO-SXl"/>
                             <constraint firstItem="f2O-RU-Mvo" firstAttribute="top" secondItem="gAQ-bh-9ei" secondAttribute="bottom" constant="15" id="0rm-Mr-urh"/>
                             <constraint firstItem="H1q-wf-Erk" firstAttribute="top" secondItem="bbq-8q-o6R" secondAttribute="top" id="6Ta-yW-BZW"/>
@@ -153,6 +163,8 @@
                             <constraint firstItem="f2O-RU-Mvo" firstAttribute="centerY" secondItem="CQT-1X-rBj" secondAttribute="centerY" id="Ut8-Ys-PEW"/>
                             <constraint firstItem="f2O-RU-Mvo" firstAttribute="leading" secondItem="CQT-1X-rBj" secondAttribute="trailing" constant="15" id="V9X-wV-gZY"/>
                             <constraint firstItem="zpF-1k-otL" firstAttribute="baseline" secondItem="H1q-wf-Erk" secondAttribute="baseline" id="VeL-pt-7hh"/>
+                            <constraint firstItem="8aE-Sg-tAD" firstAttribute="top" secondItem="H1q-wf-Erk" secondAttribute="bottom" constant="25" id="WKv-dI-K52"/>
+                            <constraint firstItem="gnq-G0-2WF" firstAttribute="centerX" secondItem="H1q-wf-Erk" secondAttribute="centerX" id="YYG-3J-qBf"/>
                             <constraint firstItem="GTF-0M-KCc" firstAttribute="centerX" secondItem="mlH-1e-pZS" secondAttribute="centerX" id="ZjP-oO-muT"/>
                             <constraint firstItem="mlH-1e-pZS" firstAttribute="baseline" secondItem="gAQ-bh-9ei" secondAttribute="baseline" id="a6w-Jq-5Zx"/>
                             <constraint firstItem="H1q-wf-Erk" firstAttribute="trailing" secondItem="f2O-RU-Mvo" secondAttribute="trailing" id="blE-kd-iEV"/>
@@ -161,6 +173,7 @@
                             <constraint firstItem="GTF-0M-KCc" firstAttribute="leading" secondItem="f2O-RU-Mvo" secondAttribute="trailing" constant="15" id="cly-d7-VMX"/>
                             <constraint firstItem="gAQ-bh-9ei" firstAttribute="bottom" secondItem="P4M-LO-aI6" secondAttribute="bottom" id="cpl-F2-h7k"/>
                             <constraint firstItem="GRZ-9h-mYR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="d55-oR-Ngo"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="gnq-G0-2WF" secondAttribute="bottom" constant="110" id="egj-N9-dhJ"/>
                             <constraint firstItem="zpF-1k-otL" firstAttribute="top" secondItem="H1q-wf-Erk" secondAttribute="top" id="g9I-nh-ut8"/>
                             <constraint firstItem="f2O-RU-Mvo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gR5-AC-Unl"/>
                             <constraint firstItem="H1q-wf-Erk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hKW-15-FxI"/>
@@ -168,7 +181,9 @@
                             <constraint firstItem="bbq-8q-o6R" firstAttribute="trailing" secondItem="CQT-1X-rBj" secondAttribute="trailing" id="iSU-LB-1gM"/>
                             <constraint firstItem="GRZ-9h-mYR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="inp-f5-l0V"/>
                             <constraint firstItem="GTF-0M-KCc" firstAttribute="baseline" secondItem="f2O-RU-Mvo" secondAttribute="baseline" id="jWR-pt-97N"/>
+                            <constraint firstItem="8aE-Sg-tAD" firstAttribute="centerX" secondItem="H1q-wf-Erk" secondAttribute="centerX" id="l6l-IE-7LA"/>
                             <constraint firstItem="mlH-1e-pZS" firstAttribute="top" secondItem="gAQ-bh-9ei" secondAttribute="top" id="lVZ-aw-JFN"/>
+                            <constraint firstItem="gnq-G0-2WF" firstAttribute="top" secondItem="8aE-Sg-tAD" secondAttribute="bottom" constant="24" id="mFp-hs-TeR"/>
                             <constraint firstItem="zpF-1k-otL" firstAttribute="leading" secondItem="GTF-0M-KCc" secondAttribute="leading" id="nhR-NV-cwz"/>
                             <constraint firstItem="bbq-8q-o6R" firstAttribute="centerX" secondItem="CQT-1X-rBj" secondAttribute="centerX" id="oRG-sW-YZc"/>
                             <constraint firstItem="H1q-wf-Erk" firstAttribute="centerX" secondItem="f2O-RU-Mvo" secondAttribute="centerX" id="rAh-oV-Hmf"/>
@@ -176,11 +191,15 @@
                             <constraint firstItem="H1q-wf-Erk" firstAttribute="centerY" secondItem="bbq-8q-o6R" secondAttribute="centerY" id="v7c-eK-gcN"/>
                             <constraint firstItem="GTF-0M-KCc" firstAttribute="centerY" secondItem="f2O-RU-Mvo" secondAttribute="centerY" id="vVA-LC-gi9"/>
                             <constraint firstItem="f2O-RU-Mvo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vXW-E0-WAb"/>
+                            <constraint firstItem="H1q-wf-Erk" firstAttribute="top" secondItem="f2O-RU-Mvo" secondAttribute="bottom" constant="15" id="x5L-Jp-cBg"/>
                             <constraint firstItem="f2O-RU-Mvo" firstAttribute="baseline" secondItem="CQT-1X-rBj" secondAttribute="baseline" id="xWJ-PS-5D2"/>
                             <constraint firstAttribute="trailingMargin" secondItem="GRZ-9h-mYR" secondAttribute="trailing" id="yUQ-EM-sV6"/>
                             <constraint firstItem="zpF-1k-otL" firstAttribute="centerY" secondItem="H1q-wf-Erk" secondAttribute="centerY" id="zVm-yW-5bd"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="winnerLabel" destination="8aE-Sg-tAD" id="Dfj-cF-j2V"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
