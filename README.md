@@ -1,4 +1,4 @@
 # TicTacToe
 iOS app
 
-# ![TicTacToe](/Images/tictactoe.gif?raw=true)
+<img src="/Images/tictactoe.gif" width="306" height="560">
